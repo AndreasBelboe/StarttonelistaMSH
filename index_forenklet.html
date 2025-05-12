@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>TSS – Starttoneliste (Forenklet test)</title>
+  <style>
+    body { font-family: sans-serif; padding: 2em; }
+    h1 { margin-bottom: 1em; }
+    button {
+      display: block;
+      padding: 0.8em;
+      margin: 0.4em 0;
+      font-size: 1.1em;
+      width: 100%;
+      max-width: 400px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>TSS – Starttoneliste (Forenklet test)</h1>
+
+  <button onclick="playNote('F3')">Jubileumskantate</button>
+  <button onclick="playNote('Bb3')">Fyld pokalen (Tourdion)</button>
+  <button onclick="playNote('C4')">Gaudeamus igitur</button>
+
+  <script>
+    function playNote(note) {
+      const audio = new Audio(`notes/${note}.mp3`);
+      audio.play().catch(error => {
+        alert("Lydfeil: " + error.message);
+        console.error("Lydfeil:", error);
+      });
+    }
+  </script>
+</body>
+</html>
