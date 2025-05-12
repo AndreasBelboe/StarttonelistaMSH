@@ -206,7 +206,7 @@ function playSong(song) {
   for (const note of notes) {
     setTimeout(() => {
       const audio = new Audio(`notes/${note}.mp3`);
-      audio.play();
+      audio.play().catch(error => { console.error(`Feil ved avspilling av ${note}:`, error); });
     }, delay);
     delay += 400;
   }
