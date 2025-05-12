@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Test av lyd</title>
+  <style>
+    body { font-family: sans-serif; padding: 2em; }
+    button {
+      padding: 1em;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Test av lydavspilling</h1>
+  <button onclick="playNote()">Spill F3</button>
+
+  <script>
+    function playNote() {
+      const audio = new Audio("notes/F3.mp3");
+      audio.play().catch(error => {
+        alert("Lydfeil: " + error.message);
+        console.error("Lydfeil:", error);
+      });
+    }
+  </script>
+</body>
+</html>
