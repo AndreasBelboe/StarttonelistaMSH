@@ -27,7 +27,7 @@
       gap: 0.4em;
     }
     .letter-nav a {
-      font-size: 1em;
+      font-size: 4em;
       text-decoration: none;
       background-color: #f6d900;
       color: #202938;
@@ -39,9 +39,9 @@
       display: block;
       padding: 0.6em 1em;
       margin: 0.3em 0;
-      font-size: 1em;
+      font-size: 4em;
       width: 100%;
-      max-width: 400px;
+      max-width: none; width: 100%;
       background-color: #ffffffcc;
       border: none;
       border-left: 4px solid #202938;
@@ -50,7 +50,7 @@
       color: #202938;
     }
     @media (max-width: 600px) {
-      body { font-size: 1em; }
+      body { font-size: 4em; }
       h1 { font-size: 1.3em; }
     }
 
@@ -66,9 +66,9 @@
       display: block;
       padding: 0.5em 1em;
       margin: 0.3em 0;
-      font-size: 1em;
+      font-size: 4em;
       width: 100%;
-      max-width: 400px;
+      max-width: none; width: 100%;
       text-align: left;
     }
   </style>
@@ -83,102 +83,174 @@
 </div>
 <hr style="border: none; height: 4px; background-color: #f6d900; width: 400px; max-width: 100%; margin: 1em 0;" />
 <h2 id="A">A</h2>
-<button onclick="playNotes(["C3", "A3"])"><strong>Akademisk bordvers</strong><br/><span style="font-size: 0.9em; color: #444;">C3 – A3</span></button>
-<button onclick="playNotes(["G3", "B3", "D4"])"><strong>Aquaviten</strong><br/><span style="font-size: 0.9em; color: #444;">G3 – B3 – D4</span></button>
-<button onclick="playNotes(["G3", "D3", "A3", "D4"])"><strong>Astri, mi Astri</strong><br/><span style="font-size: 0.9em; color: #444;">G3 – D3 – A3 – D4</span></button>
+<button onclick="playNotes(["C3", "A3"])"><strong>Akademisk bordvers</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">C3 – A3</div>
+<button onclick="playNotes(["G3", "B3", "D4"])"><strong>Aquaviten</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">G3 – B3 – D4</div>
+<button onclick="playNotes(["G3", "D3", "A3", "D4"])"><strong>Astri, mi Astri</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">G3 – D3 – A3 – D4</div>
 <h2 id="B">B</h2>
-<button onclick="playNotes(["D3", "G3"])"><strong>Boar's Head Carol</strong><br/><span style="font-size: 0.9em; color: #444;">D3 – G3</span></button>
-<button onclick="playNotes(["A2", "E3", "A3", "C4"])"><strong>Brudefærden i Hardanger</strong><br/><span style="font-size: 0.9em; color: #444;">A2 – E3 – A3 – C4</span></button>
-<button onclick="playNotes(["G2", "D3"])"><strong>Busen og småguten</strong><br/><span style="font-size: 0.9em; color: #444;">G2 – D3</span></button>
+<button onclick="playNotes(["D3", "G3"])"><strong>Boar's Head Carol</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">D3 – G3</div>
+<button onclick="playNotes(["A2", "E3", "A3", "C4"])"><strong>Brudefærden i Hardanger</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">A2 – E3 – A3 – C4</div>
+<button onclick="playNotes(["G2", "D3"])"><strong>Busen og småguten</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">G2 – D3</div>
 <h2 id="C">C</h2>
-<button onclick="playNotes(["F3"])"><strong>C'e un passo alpino (San Bernardino)</strong><br/><span style="font-size: 0.9em; color: #444;">F3</span></button>
-<button onclick="playNotes(["C4", "E4", "G3"])"><strong>Champagnegaloppen</strong><br/><span style="font-size: 0.9em; color: #444;">C4 – E4 – G3</span></button>
+<button onclick="playNotes(["F3"])"><strong>C'e un passo alpino (San Bernardino)</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">F3</div>
+<button onclick="playNotes(["C4", "E4", "G3"])"><strong>Champagnegaloppen</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">C4 – E4 – G3</div>
 <h2 id="D">D</h2>
-<button onclick="playNotes(["E3", "A3"])"><strong>Den norske Sjømand</strong><br/><span style="font-size: 0.9em; color: #444;">E3 – A3</span></button>
-<button onclick="playNotes(["C3"])"><strong>Drikkevise</strong><br/><span style="font-size: 0.9em; color: #444;">C3</span></button>
-<button onclick="playNotes(["A2", "B2"])"><strong>Dæ æ so fagert i Finneslotte</strong><br/><span style="font-size: 0.9em; color: #444;">A2 – B2</span></button>
+<button onclick="playNotes(["E3", "A3"])"><strong>Den norske Sjømand</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">E3 – A3</div>
+<button onclick="playNotes(["C3"])"><strong>Drikkevise</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">C3</div>
+<button onclick="playNotes(["A2", "B2"])"><strong>Dæ æ so fagert i Finneslotte</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">A2 – B2</div>
 <h2 id="E">E</h2>
-<button onclick="playNotes(["A3", "D3"])"><strong>Ein König (Das Königslied)</strong><br/><span style="font-size: 0.9em; color: #444;">A3 – D3</span></button>
-<button onclick="playNotes(["D3", "G3", "A3"])"><strong>En øl i handa</strong><br/><span style="font-size: 0.9em; color: #444;">D3 – G3 – A3</span></button>
+<button onclick="playNotes(["A3", "D3"])"><strong>Ein König (Das Königslied)</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">A3 – D3</div>
+<button onclick="playNotes(["D3", "G3", "A3"])"><strong>En øl i handa</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">D3 – G3 – A3</div>
 <h2 id="F">F</h2>
-<button onclick="playNotes(["G3"])"><strong>Fanfare, hymne og fanfare</strong><br/><span style="font-size: 0.9em; color: #444;">G3</span></button>
-<button onclick="playNotes(["B2", "B3", "F4", "F2", "A2", "B2"])"><strong>Far Over The Misty Mountains Cold</strong><br/><span style="font-size: 0.9em; color: #444;">B2 – B3 – F4 – F2 – A2 – B2</span></button>
-<button onclick="playNotes(["G3"])"><strong>Finsk snapsvise</strong><br/><span style="font-size: 0.9em; color: #444;">G3</span></button>
-<button onclick="playNotes(["F3", "A3", "A3", "F4"])"><strong>Fredmans epistel nr. 13: Nå ä nu alla församlade här</strong><br/><span style="font-size: 0.9em; color: #444;">F3 – A3 – A3 – F4</span></button>
-<button onclick="playNotes(["D3", "F3", "A3", "D4"])"><strong>Fredmans epistel nr. 27: Gubben är gammal</strong><br/><span style="font-size: 0.9em; color: #444;">D3 – F3 – A3 – D4</span></button>
-<button onclick="playNotes(["F3"])"><strong>Fredmans epistel nr. 30: Drick ur ditt glas</strong><br/><span style="font-size: 0.9em; color: #444;">F3</span></button>
-<button onclick="playNotes(["C3", "E3", "G3", "C4"])"><strong>Fredmans epistel nr. 72: Glimmande nymf</strong><br/><span style="font-size: 0.9em; color: #444;">C3 – E3 – G3 – C4</span></button>
-<button onclick="playNotes(["A3"])"><strong>Fredmans epistel nr. 9: Käraste bröder</strong><br/><span style="font-size: 0.9em; color: #444;">A3</span></button>
-<button onclick="playNotes(["B3"])"><strong>Friseglarens sång</strong><br/><span style="font-size: 0.9em; color: #444;">B3</span></button>
-<button onclick="playNotes(["E3", "G3", "B3", "E4"])"><strong>Fyld pokalen (Tourdion)</strong><br/><span style="font-size: 0.9em; color: #444;">E3 – G3 – B3 – E4</span></button>
+<button onclick="playNotes(["G3"])"><strong>Fanfare, hymne og fanfare</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">G3</div>
+<button onclick="playNotes(["B2", "B3", "F4", "F2", "A2", "B2"])"><strong>Far Over The Misty Mountains Cold</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">B2 – B3 – F4 – F2 – A2 – B2</div>
+<button onclick="playNotes(["G3"])"><strong>Finsk snapsvise</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">G3</div>
+<button onclick="playNotes(["F3", "A3", "A3", "F4"])"><strong>Fredmans epistel nr. 13: Nå ä nu alla församlade här</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">F3 – A3 – A3 – F4</div>
+<button onclick="playNotes(["D3", "F3", "A3", "D4"])"><strong>Fredmans epistel nr. 27: Gubben är gammal</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">D3 – F3 – A3 – D4</div>
+<button onclick="playNotes(["F3"])"><strong>Fredmans epistel nr. 30: Drick ur ditt glas</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">F3</div>
+<button onclick="playNotes(["C3", "E3", "G3", "C4"])"><strong>Fredmans epistel nr. 72: Glimmande nymf</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">C3 – E3 – G3 – C4</div>
+<button onclick="playNotes(["A3"])"><strong>Fredmans epistel nr. 9: Käraste bröder</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">A3</div>
+<button onclick="playNotes(["B3"])"><strong>Friseglarens sång</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">B3</div>
+<button onclick="playNotes(["E3", "G3", "B3", "E4"])"><strong>Fyld pokalen (Tourdion)</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">E3 – G3 – B3 – E4</div>
 <h2 id="G">G</h2>
-<button onclick="playNotes(["G3"])"><strong>Gambrinus-visen (Vårt øl)</strong><br/><span style="font-size: 0.9em; color: #444;">G3</span></button>
-<button onclick="playNotes(["A3"])"><strong>Gammelt øl</strong><br/><span style="font-size: 0.9em; color: #444;">A3</span></button>
-<button onclick="playNotes(["D3", "G3", "A3", "D4"])"><strong>Gaudeamus igitur</strong><br/><span style="font-size: 0.9em; color: #444;">D3 – G3 – A3 – D4</span></button>
-<button onclick="playNotes(["D3", "G3"])"><strong>Gloucestershire Wassail</strong><br/><span style="font-size: 0.9em; color: #444;">D3 – G3</span></button>
-<button onclick="playNotes(["B3", "E3"])"><strong>Gryning vid havet</strong><br/><span style="font-size: 0.9em; color: #444;">B3 – E3</span></button>
+<button onclick="playNotes(["G3"])"><strong>Gambrinus-visen (Vårt øl)</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">G3</div>
+<button onclick="playNotes(["A3"])"><strong>Gammelt øl</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">A3</div>
+<button onclick="playNotes(["D3", "G3", "A3", "D4"])"><strong>Gaudeamus igitur</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">D3 – G3 – A3 – D4</div>
+<button onclick="playNotes(["D3", "G3"])"><strong>Gloucestershire Wassail</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">D3 – G3</div>
+<button onclick="playNotes(["B3", "E3"])"><strong>Gryning vid havet</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">B3 – E3</div>
 <h2 id="H">H</h2>
-<button onclick="playNotes(["D3", "G3"])"><strong>Halvan</strong><br/><span style="font-size: 0.9em; color: #444;">D3 – G3</span></button>
-<button onclick="playNotes(["G3", "B3", "D4", "G4"])"><strong>Hej, dunkom</strong><br/><span style="font-size: 0.9em; color: #444;">G3 – B3 – D4 – G4</span></button>
-<button onclick="playNotes(["A3", "C4", "F3"])"><strong>Helan går</strong><br/><span style="font-size: 0.9em; color: #444;">A3 – C4 – F3</span></button>
-<button onclick="playNotes(["D3", "F3", "A3", "D4"])"><strong>Heyr, himna smiður</strong><br/><span style="font-size: 0.9em; color: #444;">D3 – F3 – A3 – D4</span></button>
-<button onclick="playNotes(["F3"])"><strong>Hiiden orjien laulu</strong><br/><span style="font-size: 0.9em; color: #444;">F3</span></button>
+<button onclick="playNotes(["D3", "G3"])"><strong>Halvan</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">D3 – G3</div>
+<button onclick="playNotes(["G3", "B3", "D4", "G4"])"><strong>Hej, dunkom</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">G3 – B3 – D4 – G4</div>
+<button onclick="playNotes(["A3", "C4", "F3"])"><strong>Helan går</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">A3 – C4 – F3</div>
+<button onclick="playNotes(["D3", "F3", "A3", "D4"])"><strong>Heyr, himna smiður</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">D3 – F3 – A3 – D4</div>
+<button onclick="playNotes(["F3"])"><strong>Hiiden orjien laulu</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">F3</div>
 <h2 id="I">I</h2>
-<button onclick="playNotes(["C3"])"><strong>Irish Blessing</strong><br/><span style="font-size: 0.9em; color: #444;">C3</span></button>
+<button onclick="playNotes(["C3"])"><strong>Irish Blessing</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">C3</div>
 <h2 id="J">J</h2>
-<button onclick="playNotes(["A3"])"><strong>Ja, vi elsker dette landet</strong><br/><span style="font-size: 0.9em; color: #444;">A3</span></button>
-<button onclick="playNotes(["G2", "G3", "H3", "D4"])"><strong>Jag vet en dejlig rosa</strong><br/><span style="font-size: 0.9em; color: #444;">G2 – G3 – H3 – D4</span></button>
-<button onclick="playNotes(["F3"])"><strong>Jubileumskantate</strong><br/><span style="font-size: 0.9em; color: #444;">F3</span></button>
+<button onclick="playNotes(["A3"])"><strong>Ja, vi elsker dette landet</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">A3</div>
+<button onclick="playNotes(["G2", "G3", "H3", "D4"])"><strong>Jag vet en dejlig rosa</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">G2 – G3 – H3 – D4</div>
+<button onclick="playNotes(["F3"])"><strong>Jubileumskantate</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">F3</div>
 <h2 id="K">K</h2>
-<button onclick="playNotes(["A3"])"><strong>Kierlighed og Smørrebrød</strong><br/><span style="font-size: 0.9em; color: #444;">A3</span></button>
-<button onclick="playNotes(["G3"])"><strong>Kjerringa med staven</strong><br/><span style="font-size: 0.9em; color: #444;">G3</span></button>
-<button onclick="playNotes(["A3"])"><strong>Kristallen den fina</strong><br/><span style="font-size: 0.9em; color: #444;">A3</span></button>
-<button onclick="playNotes(["A2"])"><strong>Kung Liljekonvalje</strong><br/><span style="font-size: 0.9em; color: #444;">A2</span></button>
-<button onclick="playNotes(["C3"])"><strong>Kvarten</strong><br/><span style="font-size: 0.9em; color: #444;">C3</span></button>
-<button onclick="playNotes(["C3"])"><strong>Kvinten</strong><br/><span style="font-size: 0.9em; color: #444;">C3</span></button>
+<button onclick="playNotes(["A3"])"><strong>Kierlighed og Smørrebrød</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">A3</div>
+<button onclick="playNotes(["G3"])"><strong>Kjerringa med staven</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">G3</div>
+<button onclick="playNotes(["A3"])"><strong>Kristallen den fina</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">A3</div>
+<button onclick="playNotes(["A2"])"><strong>Kung Liljekonvalje</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">A2</div>
+<button onclick="playNotes(["C3"])"><strong>Kvarten</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">C3</div>
+<button onclick="playNotes(["C3"])"><strong>Kvinten</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">C3</div>
 <h2 id="L">L</h2>
-<button onclick="playNotes(["F2", "F3"])"><strong>Linden Lea</strong><br/><span style="font-size: 0.9em; color: #444;">F2 – F3</span></button>
-<button onclick="playNotes(["A3"])"><strong>Lovsang til politiet</strong><br/><span style="font-size: 0.9em; color: #444;">A3</span></button>
+<button onclick="playNotes(["F2", "F3"])"><strong>Linden Lea</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">F2 – F3</div>
+<button onclick="playNotes(["A3"])"><strong>Lovsang til politiet</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">A3</div>
 <h2 id="M">M</h2>
-<button onclick="playNotes(["C3", "F3", "G3", "C4"])"><strong>Madrigal (Kom, du ljuva hjärtevän)</strong><br/><span style="font-size: 0.9em; color: #444;">C3 – F3 – G3 – C4</span></button>
-<button onclick="playNotes(["E3", "B3", "E4", "E5"])"><strong>Masurka (Jentelokken)</strong><br/><span style="font-size: 0.9em; color: #444;">E3 – B3 – E4 – E5</span></button>
-<button onclick="playNotes(["A3"])"><strong>Metsämiehen juomalaulu</strong><br/><span style="font-size: 0.9em; color: #444;">A3</span></button>
-<button onclick="playNotes(["E3", "F3", "G3", "A3"])"><strong>My Evaline</strong><br/><span style="font-size: 0.9em; color: #444;">E3 – F3 – G3 – A3</span></button>
+<button onclick="playNotes(["C3", "F3", "G3", "C4"])"><strong>Madrigal (Kom, du ljuva hjärtevän)</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">C3 – F3 – G3 – C4</div>
+<button onclick="playNotes(["E3", "B3", "E4", "E5"])"><strong>Masurka (Jentelokken)</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">E3 – B3 – E4 – E5</div>
+<button onclick="playNotes(["A3"])"><strong>Metsämiehen juomalaulu</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">A3</div>
+<button onclick="playNotes(["E3", "F3", "G3", "A3"])"><strong>My Evaline</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">E3 – F3 – G3 – A3</div>
 <h2 id="N">N</h2>
-<button onclick="playNotes(["G3", "B3", "D4"])"><strong>Naar Fjordene blaaner</strong><br/><span style="font-size: 0.9em; color: #444;">G3 – B3 – D4</span></button>
-<button onclick="playNotes(["F3"])"><strong>Norges Fjelde</strong><br/><span style="font-size: 0.9em; color: #444;">F3</span></button>
-<button onclick="playNotes(["D3", "Faharp3", "A3"])"><strong>Norges Skaal</strong><br/><span style="font-size: 0.9em; color: #444;">D3 – Faharp3 – A3</span></button>
-<button onclick="playNotes(["D3", "G3"])"><strong>Nu klinger</strong><br/><span style="font-size: 0.9em; color: #444;">D3 – G3</span></button>
+<button onclick="playNotes(["G3", "B3", "D4"])"><strong>Naar Fjordene blaaner</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">G3 – B3 – D4</div>
+<button onclick="playNotes(["F3"])"><strong>Norges Fjelde</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">F3</div>
+<button onclick="playNotes(["D3", "Faharp3", "A3"])"><strong>Norges Skaal</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">D3 – Faharp3 – A3</div>
+<button onclick="playNotes(["D3", "G3"])"><strong>Nu klinger</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">D3 – G3</div>
 <h2 id="O">O</h2>
-<button onclick="playNotes(["C4"])"><strong>Olav Trygvason</strong><br/><span style="font-size: 0.9em; color: #444;">C4</span></button>
-<button onclick="playNotes(["C3"])"><strong>Oppkomst og nedkomst</strong><br/><span style="font-size: 0.9em; color: #444;">C3</span></button>
+<button onclick="playNotes(["C4"])"><strong>Olav Trygvason</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">C4</div>
+<button onclick="playNotes(["C3"])"><strong>Oppkomst og nedkomst</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">C3</div>
 <h2 id="P">P</h2>
-<button onclick="playNotes(["C4", "C3"])"><strong>Punschens visa</strong><br/><span style="font-size: 0.9em; color: #444;">C4 – C3</span></button>
-<button onclick="playNotes(["A2", "F3", "F3", "A3"])"><strong>Pål sine hønur</strong><br/><span style="font-size: 0.9em; color: #444;">A2 – F3 – F3 – A3</span></button>
+<button onclick="playNotes(["C4", "C3"])"><strong>Punschens visa</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">C4 – C3</div>
+<button onclick="playNotes(["A2", "F3", "F3", "A3"])"><strong>Pål sine hønur</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">A2 – F3 – F3 – A3</div>
 <h2 id="R">R</h2>
-<button onclick="playNotes(["A3"])"><strong>Rocky Road to Dublin</strong><br/><span style="font-size: 0.9em; color: #444;">A3</span></button>
-<button onclick="playNotes(["F3", "C4", "F4"])"><strong>Ronja Rövardotter</strong><br/><span style="font-size: 0.9em; color: #444;">F3 – C4 – F4</span></button>
+<button onclick="playNotes(["A3"])"><strong>Rocky Road to Dublin</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">A3</div>
+<button onclick="playNotes(["F3", "C4", "F4"])"><strong>Ronja Rövardotter</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">F3 – C4 – F4</div>
 <h2 id="S">S</h2>
-<button onclick="playNotes(["A3"])"><strong>Sangerhilsen</strong><br/><span style="font-size: 0.9em; color: #444;">A3</span></button>
-<button onclick="playNotes(["C4", "D4", "E4"])"><strong>Sit on My Face</strong><br/><span style="font-size: 0.9em; color: #444;">C4 – D4 – E4</span></button>
-<button onclick="playNotes(["A2", "F3", "A3", "D4"])"><strong>Skjenkarsveinen</strong><br/><span style="font-size: 0.9em; color: #444;">A2 – F3 – A3 – D4</span></button>
-<button onclick="playNotes(["C3", "E3", "G3", "C4"])"><strong>Slutkör</strong><br/><span style="font-size: 0.9em; color: #444;">C3 – E3 – G3 – C4</span></button>
-<button onclick="playNotes(["G3"])"><strong>Spillopper og flisespikkeri</strong><br/><span style="font-size: 0.9em; color: #444;">G3</span></button>
-<button onclick="playNotes(["G2", "D3", "G3", "B3"])"><strong>Studentsång (Sjungom studentens lyckliga dag)</strong><br/><span style="font-size: 0.9em; color: #444;">G2 – D3 – G3 – B3</span></button>
+<button onclick="playNotes(["A3"])"><strong>Sangerhilsen</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">A3</div>
+<button onclick="playNotes(["C4", "D4", "E4"])"><strong>Sit on My Face</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">C4 – D4 – E4</div>
+<button onclick="playNotes(["A2", "F3", "A3", "D4"])"><strong>Skjenkarsveinen</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">A2 – F3 – A3 – D4</div>
+<button onclick="playNotes(["C3", "E3", "G3", "C4"])"><strong>Slutkör</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">C3 – E3 – G3 – C4</div>
+<button onclick="playNotes(["G3"])"><strong>Spillopper og flisespikkeri</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">G3</div>
+<button onclick="playNotes(["G2", "D3", "G3", "B3"])"><strong>Studentsång (Sjungom studentens lyckliga dag)</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">G2 – D3 – G3 – B3</div>
 <h2 id="T">T</h2>
-<button onclick="playNotes(["D3", "A3", "D4"])"><strong>Tantsulaul</strong><br/><span style="font-size: 0.9em; color: #444;">D3 – A3 – D4</span></button>
-<button onclick="playNotes(["D4"])"><strong>Tersen</strong><br/><span style="font-size: 0.9em; color: #444;">D4</span></button>
-<button onclick="playNotes(["F3"])"><strong>Till Österland</strong><br/><span style="font-size: 0.9em; color: #444;">F3</span></button>
+<button onclick="playNotes(["D3", "A3", "D4"])"><strong>Tantsulaul</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">D3 – A3 – D4</div>
+<button onclick="playNotes(["D4"])"><strong>Tersen</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">D4</div>
+<button onclick="playNotes(["F3"])"><strong>Till Österland</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">F3</div>
 <h2 id="V">V</h2>
-<button onclick="playNotes(["A2", "F3", "A3", "D4"])"><strong>Vackra kvarten</strong><br/><span style="font-size: 0.9em; color: #444;">A2 – F3 – A3 – D4</span></button>
-<button onclick="playNotes(["F3", "A3", "D4", "C4"])"><strong>Vals</strong><br/><span style="font-size: 0.9em; color: #444;">F3 – A3 – D4 – C4</span></button>
-<button onclick="playNotes(["E3", "A3"])"><strong>Vi har vår egen lille verden</strong><br/><span style="font-size: 0.9em; color: #444;">E3 – A3</span></button>
+<button onclick="playNotes(["A2", "F3", "A3", "D4"])"><strong>Vackra kvarten</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">A2 – F3 – A3 – D4</div>
+<button onclick="playNotes(["F3", "A3", "D4", "C4"])"><strong>Vals</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">F3 – A3 – D4 – C4</div>
+<button onclick="playNotes(["E3", "A3"])"><strong>Vi har vår egen lille verden</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">E3 – A3</div>
 <h2 id="Å">Å</h2>
-<button onclick="playNotes(["D3", "G3", "A3"])"><strong>Ångbåtssång</strong><br/><span style="font-size: 0.9em; color: #444;">D3 – G3 – A3</span></button>
+<button onclick="playNotes(["D3", "G3", "A3"])"><strong>Ångbåtssång</strong></button>
+<div style="margin-bottom: 1em; color: #202938; font-size: 4em;">D3 – G3 – A3</div>
 </script>
 
-  <footer style="margin-top: 3em; text-align: left; font-size: 0.9em; color: #202938;">
-    <img src="tss_logo.png" style="display: block; margin-bottom: 0.5em;" alt="TSS-logo" style="max-width: 120px; margin-bottom: 1em;">
+  <footer style="margin-top: 3em; text-align: left; font-size: 4em; color: #202938;">
+    <img src="tss_logo.png" style="display: block; margin-bottom: 0.5em; max-width: 500px;" style="display: block; margin-bottom: 0.5em;" alt="TSS-logo" style="max-width: 120px; margin-bottom: 1em;">
     <p>Laget med kjærlighet til TSS av Andreas</p>
   </footer>
 </body>
