@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Miljøsangheftets<br/>Starttoneliste!</title>
+  <title>Miljøsangheftets Starttoneliste – TKS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -42,7 +42,7 @@
       margin: 0.3em 0;
       font-size: 1em;
       width: 100%;
-      max-width: 100%;
+      max-width: 400px;
       background-color: #ffffffcc;
       border: none;
       border-left: 4px solid #202938;
@@ -50,76 +50,154 @@
       text-align: left;
       color: #202938;
     }
-    @media (max-width: 600px) {
-      body { font-size: 1em; }
-      h1 { font-size: 1.3em; }
-    }
-
-    body { font-family: sans-serif; padding: 2em; }
-    h1 { margin-bottom: 1em; }
-    .letter-nav a {
-      margin-right: 10px;
-      font-size: 18px;
-      text-decoration: none;
-      color: #1a0dab;
-    }
-    button {
-      display: block;
-      padding: 0.5em 1em;
-      margin: 0.3em 0;
-      font-size: 1em;
-      width: 100%;
-      max-width: 400px;
-      text-align: left;
-    }
     button.playing {
-  background-color: #f6d900 !important;
-  transition: background-color 0.3s ease;
+      background-color: #f6d900 !important;
+      transition: background-color 0.3s ease;
     }
   </style>
 </head>
 <body>
   <a href="index.html" style="display: inline-block; margin-bottom: 1em; font-size: 1em; color: #202938; text-decoration: none; background-color: #f6d900; padding: 0.4em 1em; border-radius: 6px; font-weight: bold;">← Tilbake til hovedmeny</a>
   <h1>Miljøsangheftets<br/>Starttoneliste!</h1>
-  <img src="tks_logo.png" style="display: block; margin-bottom: 0.5em; max-width: 180px;" alt="TSS-logo" style="max-width: 120px; margin-bottom: 1em;">
+  <img src="tks_logo.png" alt="TKS-logo" style="display: block; margin-bottom: 0.5em; max-width: 180px;">
   <br>
   <div class="letter-nav" style="display: block;">
-<div class="letter-row" style="margin-bottom: 0.3em;"><a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a></div>
-<br>
-<div class="letter-row" style="margin-bottom: 0.3em;"><a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a></div>
-<br>
-<div class="letter-row" style="margin-bottom: 0.3em;"><a href="#O">O</a> <a href="#P">P</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#V">V</a> <a href="#Å">Å</a></div>
-
-</div>
-<hr style="border: none; height: 4px; background-color: #f6d900; width: 400px; max-width: 100%; margin: 1em 0;" />
-<br>
-<h1>TKS-rep kommer snart!</h1>
-</script>
+    <div class="letter-row" style="margin-bottom: 0.3em;"><a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a></div>
+    <div class="letter-row" style="margin-bottom: 0.3em;"><a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a></div>
+    <div class="letter-row" style="margin-bottom: 0.3em;"><a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a></div>
+  </div>
+  <hr style="border: none; height: 4px; background-color: #f6d900; width: 400px; max-width: 100%; margin: 1em 0;" />
+  <h2 id="A">A</h2>
+<button onclick='playNotes(["Bb3", "G4"], this)'><strong>A Nightingale Sang in Berkeley Square</strong></button>
+<button onclick='playNotes(["C4", "A4"], this)'><strong>Akademisk bordvers</strong></button>
+<button onclick='playNotes(["A3", "A4"], this)'><strong>Alle mann hadde fota</strong></button>
+<button onclick='playNotes(["E4", "Ab4", "B4"], this)'><strong>Aquaviten</strong></button>
+<button onclick='playNotes(["Gb4", "Bb4", "Db5"], this)'><strong>Aquaviten (felles)</strong></button>
+<h2 id="B">B</h2>
+<button onclick='playNotes(["A4"], this)'><strong>Bendik og Årolilja</strong></button>
+<button onclick='playNotes(["C4", "E4", "E4", "G4"], this)'><strong>Bruremarsj (Jan Magne Førde)</strong></button>
+<button onclick='playNotes(["D4", "D4", "F4", "Bb4"], this)'><strong>Bruremarsj fra Lødingen</strong></button>
+<button onclick='playNotes(["Ab3", "Eb4", "Bb4", "Eb4", "C5"], this)'><strong>Bruremarsj fra Valsøyfjord</strong></button>
+<button onclick='playNotes(["D5", "Db5", "B4"], this)'><strong>Bryllup i bratta</strong></button>
+<h2 id="D">D</h2>
+<button onclick='playNotes(["F3", "F4", "C4"], this)'><strong>Den eldgamle jenteloven</strong></button>
+<button onclick='playNotes(["D5"], this)'><strong>Det er meg det samme hvor jeg havner når jeg dør</strong></button>
+<button onclick='playNotes(["Bb3"], this)'><strong>Drikkevise</strong></button>
+<button onclick='playNotes(["C4"], this)'><strong>Drikkevise (felles)</strong></button>
+<h2 id="E">E</h2>
+<button onclick='playNotes(["D4"], this)'><strong>Eg aktar inkje mykje hine gutan</strong></button>
+<button onclick='playNotes(["C4"], this)'><strong>Eg veit i himmerik ei borg</strong></button>
+<button onclick='playNotes(["F4", "Bb4"], this)'><strong>Ein König</strong></button>
+<button onclick='playNotes(["G4", "C5"], this)'><strong>Ein König (felles)</strong></button>
+<button onclick='playNotes(["B3", "E4", "Gb4"], this)'><strong>En øl i handa</strong></button>
+<button onclick='playNotes(["C4", "F4", "G4"], this)'><strong>En øl i handa (felles)</strong></button>
+<button onclick='playNotes(["Gb4"], this)'><strong>Ergen deda</strong></button>
+<h2 id="F">F</h2>
+<button onclick='playNotes(["G4"], this)'><strong>Finsk snapsvise</strong></button>
+<button onclick='playNotes(["G4"], this)'><strong>Finsk snapsvise (felles)</strong></button>
+<button onclick='playNotes(["F4"], this)'><strong>Follow Me Down to Carlow</strong></button>
+<button onclick='playNotes(["Eb4", "G4", "G4", "Eb5"], this)'><strong>Fredmans epistel nr. 13: Nå ä nu alla församlade här</strong></button>
+<button onclick='playNotes(["F4", "A4", "A4", "F5"], this)'><strong>Fredmans epistel nr. 13: Nå ä nu alla församlade här (felles)</strong></button>
+<button onclick='playNotes(["G4"], this)'><strong>Fredmans epistel nr. 9: Käraste bröder</strong></button>
+<button onclick='playNotes(["G4"], this)'><strong>Fredmans epistel nr. 9: Käraste bröder (felles)</strong></button>
+<button onclick='playNotes(["E3", "G3", "B3", "E4"], this)'><strong>Fyld Pokalen (Tourdion)</strong></button>
+<button onclick='playNotes(["A4"], this)'><strong>Fyllepolskan</strong></button>
+<button onclick='playNotes(["Bb3", "Bb3", "Eb4", "Eb4"], this)'><strong>Fyllevisor</strong></button>
+<h2 id="G">G</h2>
+<button onclick='playNotes(["G4"], this)'><strong>Gambrinus-visen (Vårt øl)</strong></button>
+<button onclick='playNotes(["G4"], this)'><strong>Gambrinus-visen (Vårt øl) (Felles)</strong></button>
+<button onclick='playNotes(["A4"], this)'><strong>Gammelt øl</strong></button>
+<button onclick='playNotes(["A4"], this)'><strong>Gammelt øl (felles)</strong></button>
+<button onclick='playNotes(["D5", "Gb4", "A4"], this)'><strong>Gossa lilla snäll</strong></button>
+<h2 id="H">H</h2>
+<button onclick='playNotes(["Eb4", "Bb3"], this)'><strong>Halvan</strong></button>
+<button onclick='playNotes(["Eb4", "Bb3"], this)'><strong>Halvan (felles)</strong></button>
+<button onclick='playNotes(["A4", "C5", "F4"], this)'><strong>Helan går</strong></button>
+<button onclick='playNotes(["A4", "C5", "F4"], this)'><strong>Helan går (felles)</strong></button>
+<button onclick='playNotes(["B3", "Db4", "Gb4", "B4"], this)'><strong>Hellig er studentens kall</strong></button>
+<h2 id="I">I</h2>
+<button onclick='playNotes(["Gb4"], this)'><strong>I Rosenlund under Sagas hal</strong></button>
+<button onclick='playNotes(["G3", "D4", "D4", "B4"], this)'><strong>Ingenting er vel som damekorsang</strong></button>
+<h2 id="J">J</h2>
+<button onclick='playNotes(["G4"], this)'><strong>Ja, vi elsker dette landet</strong></button>
+<button onclick='playNotes(["D4"], this)'><strong>Jubileumskantate</strong></button>
+<button onclick='playNotes(["E4"], this)'><strong>Jubileumskantate (felles)</strong></button>
+<h2 id="K">K</h2>
+<button onclick='playNotes(["E4"], this)'><strong>Kaval sviri</strong></button>
+<button onclick='playNotes(["C4", "G4"], this)'><strong>Kvarten</strong></button>
+<button onclick='playNotes(["C4", "G4"], this)'><strong>Kvarten (felles)</strong></button>
+<button onclick='playNotes(["C5"], this)'><strong>Kvinten</strong></button>
+<button onclick='playNotes(["C5"], this)'><strong>Kvinten (felles)</strong></button>
+<button onclick='playNotes(["Bb3", "Db4", "F4"], this)'><strong>Kyss av eld</strong></button>
+<h2 id="L">L</h2>
+<button onclick='playNotes(["Bb4", "D5"], this)'><strong>Litjvisa mi</strong></button>
+<h2 id="M">M</h2>
+<button onclick='playNotes(["B3", "E4"], this)'><strong>Mannen og kråka</strong></button>
+<button onclick='playNotes(["E3", "B3", "E4", "E5"], this)'><strong>Masurka (Jentelokken)</strong></button>
+<button onclick='playNotes(["G4"], this)'><strong>Metsämiehen Juomalaulu</strong></button>
+<button onclick='playNotes(["G4"], this)'><strong>Metsämiehen Juomalaulu (felles)</strong></button>
+<button onclick='playNotes(["F4", "A4", "C5"], this)'><strong>Mitt hjerte er ditt</strong></button>
+<h2 id="N">N</h2>
+<button onclick='playNotes(["Bb3", "F4", "Bb4", "D5"], this)'><strong>Norge, mitt Norge</strong></button>
+<button onclick='playNotes(["D4", "G4"], this)'><strong>Nu klinger</strong></button>
+<button onclick='playNotes(["D4", "G4"], this)'><strong>Nu klinger (felles)</strong></button>
+<h2 id="O">O</h2>
+<button onclick='playNotes(["C4"], this)'><strong>Oppkomst og nedkomst</strong></button>
+<button onclick='playNotes(["C4"], this)'><strong>Oppkomst og nedkomst (felles)</strong></button>
+<h2 id="P">P</h2>
+<button onclick='playNotes(["B3", "E4", "G4", "B4"], this)'><strong>Pols fra Dunderlandsdalen</strong></button>
+<h2 id="R">R</h2>
+<button onclick='playNotes(["B3", "E4", "B4"], this)'><strong>Roland og Magnuskongen</strong></button>
+<button onclick='playNotes(["Eb3", "Db4", "Gb4"], this)'><strong>Ronja Rövardotter</strong></button>
+<h2 id="S">S</h2>
+<button onclick='playNotes(["D4", "D4", "G4", "G4", "D4"], this)'><strong>Safari (fanfare)</strong></button>
+<button onclick='playNotes(["G4"], this)'><strong>Sangerhilsen</strong></button>
+<button onclick='playNotes(["A4", "B4", "Db5"], this)'><strong>Sit on My Face</strong></button>
+<button onclick='playNotes(["B4", "Db5", "Eb5"], this)'><strong>Sit on My Face (felles)</strong></button>
+<button onclick='playNotes(["F3", "C4", "F4", "A4"], this)'><strong>Sjungom</strong></button>
+<button onclick='playNotes(["G3", "D4", "G4", "B4"], this)'><strong>Sjungom (felles)</strong></button>
+<button onclick='playNotes(["C3", "E4", "G4", "C5"], this)'><strong>Slutkör</strong></button>
+<button onclick='playNotes(["C3", "E4", "G4", "C5"], this)'><strong>Slutkör (felles)</strong></button>
+<button onclick='playNotes(["B4"], this)'><strong>So ro godt barn</strong></button>
+<button onclick='playNotes(["Gb4"], this)'><strong>Sommarpsalm</strong></button>
+<button onclick='playNotes(["G4"], this)'><strong>Spillopper og flisespikkeri</strong></button>
+<button onclick='playNotes(["Bb4", "G4"], this)'><strong>Syngedame</strong></button>
+<h2 id="T">T</h2>
+<button onclick='playNotes(["B4"], this)'><strong>Tersen</strong></button>
+<button onclick='playNotes(["Db5"], this)'><strong>Tersen (felles)</strong></button>
+<button onclick='playNotes(["Gb4"], this)'><strong>Till Österland</strong></button>
+<button onclick='playNotes(["Gb4"], this)'><strong>Till Österland (felles)</strong></button>
+<button onclick='playNotes(["G3", "D4"], this)'><strong>Trolldans</strong></button>
+<h2 id="U">U</h2>
+<button onclick='playNotes(["B4", "Db5", "D5"], this)'><strong>Ubi caritas</strong></button>
+<h2 id="V">V</h2>
+<button onclick='playNotes(["B3", "D4", "G4", "B4"], this)'><strong>Vackra kvarten</strong></button>
+<button onclick='playNotes(["Db4", "E4", "A4", "Db4"], this)'><strong>Vackra kvarten (felles)</strong></button>
+<button onclick='playNotes(["D4"], this)'><strong>Vals</strong></button>
+<button onclick='playNotes(["E4"], this)'><strong>Vals (felles)</strong></button>
+<button onclick='playNotes(["D4", "Gb4", "D5"], this)'><strong>Ved Rondane</strong></button>
 
   <footer style="margin-top: 3em; text-align: left; font-size: 0.9em; color: #202938;">
     <p>Laget med kjærlighet til TKS av Andreas Belboe, fordi det synges for lite!</p>
   </footer>
-
-<script>
-  function playNotes(notes, btn) {
-  if (btn) {
-    btn.classList.add('playing');
-    setTimeout(() => btn.classList.remove('playing'), notes.length * 400 + 200);
-  }
-
-  let delay = 0;
-  for (const note of notes) {
-    setTimeout(() => {
-      const audio = new Audio(`notes/${note}.mp3`);
-      audio.play().catch(error => {
-        alert("Lydfeil: " + error.message);
-        console.error("Lydfeil:", error);
-      });
-    }, delay);
-    delay += 400;
-  }
-}
-</script>
+  <script>
+    function playNotes(notes, btn) {
+      if (btn) {
+        btn.classList.add('playing');
+        setTimeout(() => btn.classList.remove('playing'), notes.length * 400 + 200);
+      }
+      let delay = 0;
+      for (const note of notes) {
+        setTimeout(() => {
+          const audio = new Audio(`notes/${note}.mp3`);
+          audio.play().catch(error => {
+            alert("Lydfeil: " + error.message);
+            console.error("Lydfeil:", error);
+          });
+        }, delay);
+        delay += 400;
+      }
+    }
+  </script>
 </body>
-
 </html>
