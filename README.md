@@ -1,4 +1,4 @@
-# TSS – Miljøsangheftets Starttoneliste
+# TXS – Miljøsangheftets Starttoneliste
 
 Dette er en enkel webapp laget for å spille starttoner for sanger i miljøsangheftet.
 
