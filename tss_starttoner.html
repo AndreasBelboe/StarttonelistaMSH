@@ -187,19 +187,24 @@
   </footer>
 
 <script>
-  function playNotes(notes) {
-    let delay = 0;
-    for (const note of notes) {
-      setTimeout(() => {
-        const audio = new Audio(`notes/${note}.mp3`);
-        audio.play().catch(error => {
-          alert("Lydfeil: " + error.message);
-          console.error("Lydfeil:", error);
-        });
-      }, delay);
-      delay += 400;
-    }
+  function playNotes(notes, btn) {
+  if (btn) {
+    btn.classList.add('playing');
+    setTimeout(() => btn.classList.remove('playing'), notes.length * 400 + 200);
   }
+
+  let delay = 0;
+  for (const note of notes) {
+    setTimeout(() => {
+      const audio = new Audio(`notes/${note}.mp3`);
+      audio.play().catch(error => {
+        alert("Lydfeil: " + error.message);
+        console.error("Lydfeil:", error);
+      });
+    }, delay);
+    delay += 400;
+  }
+}
 </script>
 </body>
 
