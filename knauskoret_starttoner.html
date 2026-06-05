@@ -15,113 +15,112 @@
         #bbbbbb 50px,
         #bbbbbb 100px
       );
-      color: #111;
-      font-size: 2em;
       margin: 0;
-      padding: 2em;
-    }
-    .back-link {
-      display: inline-block;
-      margin-bottom: 1.5em;
+      padding: 1em;
       color: #111;
-      font-size: 0.6em;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-bottom: 1em;
+      font-size: 1em;
+      color: #111;
       text-decoration: none;
       background-color: #ffffffee;
-      padding: 0.2em 0.6em;
-      border-radius: 4px;
+      padding: 0.4em 1em;
+      border-radius: 6px;
+      font-weight: bold;
     }
-    .back-link:hover { background-color: #fff; }
     h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
-      line-height: 1.2;
-      border-left: 10px solid #111;
+      margin-bottom: 1em;
+      font-size: 1.6em;
       color: #111;
-      background-color: #ffffffee;
+      border-left: 6px solid #111;
+      padding-left: 0.5em;
+      background-color: #ffffffcc;
       padding: 0.3em 0.5em;
       border-radius: 4px;
     }
-    .logo {
+    img.logo {
       display: block;
-      max-height: 150px;
-      margin: 1em 0;
+      margin-bottom: 0.5em;
+      max-width: 180px;
     }
-    .bokstav-nav {
-      background-color: #ffffffdd;
-      border-radius: 8px;
-      padding: 0.5em 0.8em;
-      margin: 1.5em 0;
+    .letter-nav {
+      margin-bottom: 1em;
       display: flex;
       flex-wrap: wrap;
-      gap: 0.3em;
+      gap: 0.4em;
     }
-    .bokstav-nav a {
-      color: #111;
+    .letter-nav a {
+      font-size: 1em;
       text-decoration: none;
+      background-color: #111;
+      color: #fff;
+      padding: 0.2em 0.6em;
+      border-radius: 4px;
       font-weight: 600;
-      font-size: 0.7em;
-      padding: 0.2em 0.4em;
-      border-radius: 4px;
-      background-color: #ffffffcc;
-      border: 2px solid #111;
     }
-    .bokstav-nav a:hover { background-color: #fff; }
-    hr {
-      border: none;
-      border-top: 3px solid #111;
-      margin: 1.5em 0;
-      opacity: 0.3;
+    .letter-nav a:hover {
+      background-color: #333;
     }
-    h2 {
-      font-size: 1.8em;
-      background-color: #ffffffee;
-      display: inline-block;
-      padding: 0.1em 0.4em;
-      border-radius: 4px;
-      margin-bottom: 0.5em;
-    }
-    .sang-kort {
-      background-color: #ffffffcc;
-      border: 3px solid #111;
-      border-radius: 8px;
-      padding: 0.6em 1em;
-      margin-bottom: 0.7em;
+    button {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      max-width: 600px;
+      justify-content: space-between;
+      padding: 0.6em 1em;
+      margin: 0.3em 0;
+      font-size: 1em;
+      width: 100%;
+      max-width: 400px;
+      background-color: #ffffffcc;
+      border: none;
+      border-left: 4px solid #111;
+      border-radius: 4px;
+      text-align: left;
+      color: #111;
+      cursor: pointer;
     }
-    .sang-tittel {
-      font-weight: 600;
-      font-size: 0.85em;
-    }
-    .starttoner {
-      font-size: 0.75em;
-      color: #444;
-      text-align: right;
-      white-space: nowrap;
-      margin-left: 1em;
+    button.playing {
+      background-color: #cccccc !important;
+      transition: background-color 0.3s ease;
     }
     .tone-boble {
       display: inline-block;
-      background-color: #222;
+      background-color: #111;
       color: #fff;
       border-radius: 50%;
-      width: 1.6em;
-      height: 1.6em;
-      line-height: 1.6em;
+      width: 1.8em;
+      height: 1.8em;
+      line-height: 1.8em;
       text-align: center;
       font-weight: 600;
       margin-left: 0.3em;
-      font-size: 0.9em;
+      font-size: 0.85em;
+      flex-shrink: 0;
+    }
+    .starttoner {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding-left: 0.5em;
+    }
+    hr {
+      border: none;
+      height: 4px;
+      background-color: #111;
+      width: 400px;
+      max-width: 100%;
+      margin: 1em 0;
+      opacity: 0.4;
     }
     footer {
-      margin-top: 4em;
-      font-size: 0.6em;
+      margin-top: 3em;
+      text-align: left;
+      font-size: 0.9em;
       color: #111;
       background-color: #ffffffcc;
       display: inline-block;
-      padding: 0.4em 0.8em;
+      padding: 0.3em 0.6em;
       border-radius: 4px;
     }
   </style>
@@ -130,11 +129,11 @@
 
   <a class="back-link" href="andre_kor.html">← Tilbake</a>
 
-  <h1>Knauskorets<br>Starttoneliste!</h1>
+  <h1>Knauskorets<br/>Starttoneliste!</h1>
 
   <img class="logo" src="knauskoret_logo.png" alt="Knauskoret-logo">
 
-  <nav class="bokstav-nav">
+  <div class="letter-nav">
     <a href="#A">A</a>
     <a href="#C">C</a>
     <a href="#H">H</a>
@@ -143,77 +142,56 @@
     <a href="#T">T</a>
     <a href="#U">U</a>
     <a href="#V">V</a>
-  </nav>
+  </div>
 
-  <hr>
+  <hr />
 
   <h2 id="A">A</h2>
-
-  <div class="sang-kort">
-    <span class="sang-tittel">Ambassanova</span>
-    <span class="starttoner"><span class="tone-boble">E</span></span>
-  </div>
+  <button onclick='playNotes(["E3"], this)'><strong>Ambassanova</strong><span class="starttoner"><span class="tone-boble">E</span></span></button>
 
   <h2 id="C">C</h2>
-
-  <div class="sang-kort">
-    <span class="sang-tittel">Choices</span>
-    <span class="starttoner"><span class="tone-boble">E</span><span class="tone-boble">G</span></span>
-  </div>
+  <button onclick='playNotes(["E3", "G3"], this)'><strong>Choices</strong><span class="starttoner"><span class="tone-boble">E</span><span class="tone-boble">G</span></span></button>
 
   <h2 id="H">H</h2>
-
-  <div class="sang-kort">
-    <span class="sang-tittel">Hysteria</span>
-    <span class="starttoner"><span class="tone-boble">A</span></span>
-  </div>
+  <button onclick='playNotes(["A3"], this)'><strong>Hysteria</strong><span class="starttoner"><span class="tone-boble">A</span></span></button>
 
   <h2 id="L">L</h2>
-
-  <div class="sang-kort">
-    <span class="sang-tittel">Lite og stort</span>
-    <span class="starttoner"><span class="tone-boble">C</span><span class="tone-boble">G</span><span class="tone-boble">E</span></span>
-  </div>
+  <button onclick='playNotes(["C3", "G3", "E3"], this)'><strong>Lite og stort</strong><span class="starttoner"><span class="tone-boble">C</span><span class="tone-boble">G</span><span class="tone-boble">E</span></span></button>
 
   <h2 id="P">P</h2>
-
-  <div class="sang-kort">
-    <span class="sang-tittel">Pulemedley</span>
-    <span class="starttoner"><span class="tone-boble">D#</span><span class="tone-boble">G</span><span class="tone-boble">A#</span></span>
-  </div>
+  <button onclick='playNotes(["Eb3", "G3", "Bb3"], this)'><strong>Pulemedley</strong><span class="starttoner"><span class="tone-boble">D#</span><span class="tone-boble">G</span><span class="tone-boble">A#</span></span></button>
 
   <h2 id="T">T</h2>
-
-  <div class="sang-kort">
-    <span class="sang-tittel">The Seed</span>
-    <span class="starttoner"><span class="tone-boble">A</span><span class="tone-boble">D</span></span>
-  </div>
-
-  <div class="sang-kort">
-    <span class="sang-tittel">The Way I Are</span>
-    <span class="starttoner"><span class="tone-boble">G#</span></span>
-  </div>
-
-  <div class="sang-kort">
-    <span class="sang-tittel">Thomas-toget</span>
-    <span class="starttoner"><span class="tone-boble">D#</span><span class="tone-boble">A#</span><span class="tone-boble">G</span><span class="tone-boble">D#</span></span>
-  </div>
+  <button onclick='playNotes(["A3", "D3"], this)'><strong>The Seed</strong><span class="starttoner"><span class="tone-boble">A</span><span class="tone-boble">D</span></span></button>
+  <button onclick='playNotes(["Ab3"], this)'><strong>The Way I Are</strong><span class="starttoner"><span class="tone-boble">G#</span></span></button>
+  <button onclick='playNotes(["Eb3", "Bb3", "G3"], this)'><strong>Thomas-toget</strong><span class="starttoner"><span class="tone-boble">D#</span><span class="tone-boble">A#</span><span class="tone-boble">G</span></span></button>
 
   <h2 id="U">U</h2>
-
-  <div class="sang-kort">
-    <span class="sang-tittel">Ulveham</span>
-    <span class="starttoner"><span class="tone-boble">H</span></span>
-  </div>
+  <button onclick='playNotes(["B3"], this)'><strong>Ulveham</strong><span class="starttoner"><span class="tone-boble">H</span></span></button>
 
   <h2 id="V">V</h2>
-
-  <div class="sang-kort">
-    <span class="sang-tittel">Venus</span>
-    <span class="starttoner"><span class="tone-boble">C</span></span>
-  </div>
+  <button onclick='playNotes(["C3"], this)'><strong>Venus</strong><span class="starttoner"><span class="tone-boble">C</span></span></button>
 
   <footer>Laget med kjærlighet av Andreas Belboe. Fordi det synges for lite!</footer>
+
+  <script>
+    function playNotes(notes, btn) {
+      if (btn) {
+        btn.classList.add('playing');
+        setTimeout(() => btn.classList.remove('playing'), notes.length * 400 + 200);
+      }
+      let delay = 0;
+      for (const note of notes) {
+        setTimeout(() => {
+          const audio = new Audio(`notes/${note}.mp3`);
+          audio.play().catch(error => {
+            console.error("Lydfeil:", error);
+          });
+        }, delay);
+        delay += 400;
+      }
+    }
+  </script>
 
 </body>
 </html>

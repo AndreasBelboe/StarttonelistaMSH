@@ -54,6 +54,33 @@
       background-color: #f6d900 !important;
       transition: background-color 0.3s ease;
     }
+  
+    .tone-boble {
+      display: inline-block;
+      background-color: #202938;
+      color: #fff;
+      border-radius: 50%;
+      width: 1.8em;
+      height: 1.8em;
+      line-height: 1.8em;
+      text-align: center;
+      font-weight: 600;
+      margin-left: 0.3em;
+      font-size: 0.85em;
+      flex-shrink: 0;
+    }
+    .starttoner {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding-left: 0.5em;
+    }
+    button {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -72,114 +99,114 @@
   </div>
   <hr style="border: none; height: 4px; background-color: #f6d900; width: 400px; max-width: 100%; margin: 1em 0;" />
   <h2 id="A">A</h2>
-<button onclick='playNotes(["Bb3", "G4"], this)'><strong>A Nightingale Sang in Berkeley Square</strong></button>
-<button onclick='playNotes(["C4", "A4"], this)'><strong>Akademisk bordvers</strong></button>
-<button onclick='playNotes(["A3", "A4"], this)'><strong>Alle mann hadde fota</strong></button>
-<button onclick='playNotes(["E4", "Ab4", "B4"], this)'><strong>Aquaviten</strong></button>
-<button onclick='playNotes(["Gb4", "Bb4", "Db5"], this)'><strong>Aquaviten (felles)</strong></button>
+<button onclick='playNotes(["Bb3", "G4"], this)'><strong>A Nightingale Sang in Berkeley Square</strong><span class="starttoner"><span class="tone-boble">Bb</span><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["C4", "A4"], this)'><strong>Akademisk bordvers</strong><span class="starttoner"><span class="tone-boble">C</span><span class="tone-boble">A</span></span></button>
+<button onclick='playNotes(["A3", "A4"], this)'><strong>Alle mann hadde fota</strong><span class="starttoner"><span class="tone-boble">A</span></span></button>
+<button onclick='playNotes(["E4", "Ab4", "B4"], this)'><strong>Aquaviten</strong><span class="starttoner"><span class="tone-boble">E</span><span class="tone-boble">Ab</span><span class="tone-boble">B</span></span></button>
+<button onclick='playNotes(["Gb4", "Bb4", "Db5"], this)'><strong>Aquaviten (felles)</strong><span class="starttoner"><span class="tone-boble">Gb</span><span class="tone-boble">Bb</span><span class="tone-boble">Db</span></span></button>
 <h2 id="B">B</h2>
-<button onclick='playNotes(["A4"], this)'><strong>Bendik og Årolilja</strong></button>
-<button onclick='playNotes(["C4", "E4", "E4", "G4"], this)'><strong>Bruremarsj (Jan Magne Førde)</strong></button>
-<button onclick='playNotes(["D4", "D4", "F4", "Bb4"], this)'><strong>Bruremarsj fra Lødingen</strong></button>
-<button onclick='playNotes(["Ab3", "Eb4", "Bb4", "Eb4", "C5"], this)'><strong>Bruremarsj fra Valsøyfjord</strong></button>
-<button onclick='playNotes(["D5", "Db5", "B4"], this)'><strong>Bryllup i bratta</strong></button>
+<button onclick='playNotes(["A4"], this)'><strong>Bendik og Årolilja</strong><span class="starttoner"><span class="tone-boble">A</span></span></button>
+<button onclick='playNotes(["C4", "E4", "E4", "G4"], this)'><strong>Bruremarsj (Jan Magne Førde)</strong><span class="starttoner"><span class="tone-boble">C</span><span class="tone-boble">E</span><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["D4", "D4", "F4", "Bb4"], this)'><strong>Bruremarsj fra Lødingen</strong><span class="starttoner"><span class="tone-boble">D</span><span class="tone-boble">F</span><span class="tone-boble">Bb</span></span></button>
+<button onclick='playNotes(["Ab3", "Eb4", "Bb4", "Eb4", "C5"], this)'><strong>Bruremarsj fra Valsøyfjord</strong><span class="starttoner"><span class="tone-boble">Ab</span><span class="tone-boble">Eb</span><span class="tone-boble">Bb</span><span class="tone-boble">C</span></span></button>
+<button onclick='playNotes(["D5", "Db5", "B4"], this)'><strong>Bryllup i bratta</strong><span class="starttoner"><span class="tone-boble">D</span><span class="tone-boble">Db</span><span class="tone-boble">B</span></span></button>
 <h2 id="D">D</h2>
-<button onclick='playNotes(["F3", "F4", "C4"], this)'><strong>Den eldgamle jenteloven</strong></button>
-<button onclick='playNotes(["D5"], this)'><strong>Det er meg det samme hvor jeg havner når jeg dør</strong></button>
-<button onclick='playNotes(["Bb3"], this)'><strong>Drikkevise</strong></button>
-<button onclick='playNotes(["C4"], this)'><strong>Drikkevise (felles)</strong></button>
+<button onclick='playNotes(["F3", "F4", "C4"], this)'><strong>Den eldgamle jenteloven</strong><span class="starttoner"><span class="tone-boble">F</span><span class="tone-boble">C</span></span></button>
+<button onclick='playNotes(["D5"], this)'><strong>Det er meg det samme hvor jeg havner når jeg dør</strong><span class="starttoner"><span class="tone-boble">D</span></span></button>
+<button onclick='playNotes(["Bb3"], this)'><strong>Drikkevise</strong><span class="starttoner"><span class="tone-boble">Bb</span></span></button>
+<button onclick='playNotes(["C4"], this)'><strong>Drikkevise (felles)</strong><span class="starttoner"><span class="tone-boble">C</span></span></button>
 <h2 id="E">E</h2>
-<button onclick='playNotes(["D4"], this)'><strong>Eg aktar inkje mykje hine gutan</strong></button>
-<button onclick='playNotes(["C4"], this)'><strong>Eg veit i himmerik ei borg</strong></button>
-<button onclick='playNotes(["F4", "Bb4"], this)'><strong>Ein König</strong></button>
-<button onclick='playNotes(["G4", "C5"], this)'><strong>Ein König (felles)</strong></button>
-<button onclick='playNotes(["B3", "E4", "Gb4"], this)'><strong>En øl i handa</strong></button>
-<button onclick='playNotes(["C4", "F4", "G4"], this)'><strong>En øl i handa (felles)</strong></button>
-<button onclick='playNotes(["Gb4"], this)'><strong>Ergen deda</strong></button>
+<button onclick='playNotes(["D4"], this)'><strong>Eg aktar inkje mykje hine gutan</strong><span class="starttoner"><span class="tone-boble">D</span></span></button>
+<button onclick='playNotes(["C4"], this)'><strong>Eg veit i himmerik ei borg</strong><span class="starttoner"><span class="tone-boble">C</span></span></button>
+<button onclick='playNotes(["F4", "Bb4"], this)'><strong>Ein König</strong><span class="starttoner"><span class="tone-boble">F</span><span class="tone-boble">Bb</span></span></button>
+<button onclick='playNotes(["G4", "C5"], this)'><strong>Ein König (felles)</strong><span class="starttoner"><span class="tone-boble">G</span><span class="tone-boble">C</span></span></button>
+<button onclick='playNotes(["B3", "E4", "Gb4"], this)'><strong>En øl i handa</strong><span class="starttoner"><span class="tone-boble">B</span><span class="tone-boble">E</span><span class="tone-boble">Gb</span></span></button>
+<button onclick='playNotes(["C4", "F4", "G4"], this)'><strong>En øl i handa (felles)</strong><span class="starttoner"><span class="tone-boble">C</span><span class="tone-boble">F</span><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["Gb4"], this)'><strong>Ergen deda</strong><span class="starttoner"><span class="tone-boble">Gb</span></span></button>
 <h2 id="F">F</h2>
-<button onclick='playNotes(["G4"], this)'><strong>Finsk snapsvise</strong></button>
-<button onclick='playNotes(["G4"], this)'><strong>Finsk snapsvise (felles)</strong></button>
-<button onclick='playNotes(["F4"], this)'><strong>Follow Me Down to Carlow</strong></button>
-<button onclick='playNotes(["Eb4", "G4", "G4", "Eb5"], this)'><strong>Fredmans epistel nr. 13: Nå ä nu alla församlade här</strong></button>
-<button onclick='playNotes(["F4", "A4", "A4", "F5"], this)'><strong>Fredmans epistel nr. 13: Nå ä nu alla församlade här (felles)</strong></button>
-<button onclick='playNotes(["G4"], this)'><strong>Fredmans epistel nr. 9: Käraste bröder</strong></button>
-<button onclick='playNotes(["G4"], this)'><strong>Fredmans epistel nr. 9: Käraste bröder (felles)</strong></button>
-<button onclick='playNotes(["E3", "G3", "B3", "E4"], this)'><strong>Fyld Pokalen (Tourdion)</strong></button>
-<button onclick='playNotes(["A4"], this)'><strong>Fyllepolskan</strong></button>
-<button onclick='playNotes(["Bb3", "Bb3", "Eb4", "Eb4"], this)'><strong>Fyllevisor</strong></button>
+<button onclick='playNotes(["G4"], this)'><strong>Finsk snapsvise</strong><span class="starttoner"><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["G4"], this)'><strong>Finsk snapsvise (felles)</strong><span class="starttoner"><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["F4"], this)'><strong>Follow Me Down to Carlow</strong><span class="starttoner"><span class="tone-boble">F</span></span></button>
+<button onclick='playNotes(["Eb4", "G4", "G4", "Eb5"], this)'><strong>Fredmans epistel nr. 13: Nå ä nu alla församlade här</strong><span class="starttoner"><span class="tone-boble">Eb</span><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["F4", "A4", "A4", "F5"], this)'><strong>Fredmans epistel nr. 13: Nå ä nu alla församlade här (felles)</strong><span class="starttoner"><span class="tone-boble">F</span><span class="tone-boble">A</span></span></button>
+<button onclick='playNotes(["G4"], this)'><strong>Fredmans epistel nr. 9: Käraste bröder</strong><span class="starttoner"><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["G4"], this)'><strong>Fredmans epistel nr. 9: Käraste bröder (felles)</strong><span class="starttoner"><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["E3", "G3", "B3", "E4"], this)'><strong>Fyld Pokalen (Tourdion)</strong><span class="starttoner"><span class="tone-boble">E</span><span class="tone-boble">G</span><span class="tone-boble">B</span></span></button>
+<button onclick='playNotes(["A4"], this)'><strong>Fyllepolskan</strong><span class="starttoner"><span class="tone-boble">A</span></span></button>
+<button onclick='playNotes(["Bb3", "Bb3", "Eb4", "Eb4"], this)'><strong>Fyllevisor</strong><span class="starttoner"><span class="tone-boble">Bb</span><span class="tone-boble">Eb</span></span></button>
 <h2 id="G">G</h2>
-<button onclick='playNotes(["G4"], this)'><strong>Gambrinus-visen (Vårt øl)</strong></button>
-<button onclick='playNotes(["G4"], this)'><strong>Gambrinus-visen (Vårt øl) (Felles)</strong></button>
-<button onclick='playNotes(["A4"], this)'><strong>Gammelt øl</strong></button>
-<button onclick='playNotes(["A4"], this)'><strong>Gammelt øl (felles)</strong></button>
-<button onclick='playNotes(["D5", "Gb4", "A4"], this)'><strong>Gossa lilla snäll</strong></button>
+<button onclick='playNotes(["G4"], this)'><strong>Gambrinus-visen (Vårt øl)</strong><span class="starttoner"><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["G4"], this)'><strong>Gambrinus-visen (Vårt øl) (Felles)</strong><span class="starttoner"><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["A4"], this)'><strong>Gammelt øl</strong><span class="starttoner"><span class="tone-boble">A</span></span></button>
+<button onclick='playNotes(["A4"], this)'><strong>Gammelt øl (felles)</strong><span class="starttoner"><span class="tone-boble">A</span></span></button>
+<button onclick='playNotes(["D5", "Gb4", "A4"], this)'><strong>Gossa lilla snäll</strong><span class="starttoner"><span class="tone-boble">D</span><span class="tone-boble">Gb</span><span class="tone-boble">A</span></span></button>
 <h2 id="H">H</h2>
-<button onclick='playNotes(["Eb4", "Bb3"], this)'><strong>Halvan</strong></button>
-<button onclick='playNotes(["Eb4", "Bb4"], this)'><strong>Halvan (felles)</strong></button>
-<button onclick='playNotes(["A4", "C5", "F4"], this)'><strong>Helan går</strong></button>
-<button onclick='playNotes(["A4", "C5", "F4"], this)'><strong>Helan går (felles)</strong></button>
-<button onclick='playNotes(["B3", "Eb4", "Gb4", "B4"], this)'><strong>Hellig er studentens kall</strong></button>
+<button onclick='playNotes(["Eb4", "Bb3"], this)'><strong>Halvan</strong><span class="starttoner"><span class="tone-boble">Eb</span><span class="tone-boble">Bb</span></span></button>
+<button onclick='playNotes(["Eb4", "Bb4"], this)'><strong>Halvan (felles)</strong><span class="starttoner"><span class="tone-boble">Eb</span><span class="tone-boble">Bb</span></span></button>
+<button onclick='playNotes(["A4", "C5", "F4"], this)'><strong>Helan går</strong><span class="starttoner"><span class="tone-boble">A</span><span class="tone-boble">C</span><span class="tone-boble">F</span></span></button>
+<button onclick='playNotes(["A4", "C5", "F4"], this)'><strong>Helan går (felles)</strong><span class="starttoner"><span class="tone-boble">A</span><span class="tone-boble">C</span><span class="tone-boble">F</span></span></button>
+<button onclick='playNotes(["B3", "Eb4", "Gb4", "B4"], this)'><strong>Hellig er studentens kall</strong><span class="starttoner"><span class="tone-boble">B</span><span class="tone-boble">Eb</span><span class="tone-boble">Gb</span></span></button>
 <h2 id="I">I</h2>
-<button onclick='playNotes(["Gb4"], this)'><strong>I Rosenlund under Sagas hal</strong></button>
-<button onclick='playNotes(["G3", "D4", "D4", "B4"], this)'><strong>Ingenting er vel som damekorsang</strong></button>
+<button onclick='playNotes(["Gb4"], this)'><strong>I Rosenlund under Sagas hal</strong><span class="starttoner"><span class="tone-boble">Gb</span></span></button>
+<button onclick='playNotes(["G3", "D4", "D4", "B4"], this)'><strong>Ingenting er vel som damekorsang</strong><span class="starttoner"><span class="tone-boble">G</span><span class="tone-boble">D</span><span class="tone-boble">B</span></span></button>
 <h2 id="J">J</h2>
-<button onclick='playNotes(["G4"], this)'><strong>Ja, vi elsker dette landet</strong></button>
-<button onclick='playNotes(["D4"], this)'><strong>Jubileumskantate</strong></button>
-<button onclick='playNotes(["E4"], this)'><strong>Jubileumskantate (felles)</strong></button>
+<button onclick='playNotes(["G4"], this)'><strong>Ja, vi elsker dette landet</strong><span class="starttoner"><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["D4"], this)'><strong>Jubileumskantate</strong><span class="starttoner"><span class="tone-boble">D</span></span></button>
+<button onclick='playNotes(["E4"], this)'><strong>Jubileumskantate (felles)</strong><span class="starttoner"><span class="tone-boble">E</span></span></button>
 <h2 id="K">K</h2>
-<button onclick='playNotes(["E4"], this)'><strong>Kaval sviri</strong></button>
-<button onclick='playNotes(["C4", "G4"], this)'><strong>Kvarten</strong></button>
-<button onclick='playNotes(["C4", "G4"], this)'><strong>Kvarten (felles)</strong></button>
-<button onclick='playNotes(["C5"], this)'><strong>Kvinten</strong></button>
-<button onclick='playNotes(["C5"], this)'><strong>Kvinten (felles)</strong></button>
-<button onclick='playNotes(["Bb3", "Db4", "F4"], this)'><strong>Kyss av eld</strong></button>
+<button onclick='playNotes(["E4"], this)'><strong>Kaval sviri</strong><span class="starttoner"><span class="tone-boble">E</span></span></button>
+<button onclick='playNotes(["C4", "G4"], this)'><strong>Kvarten</strong><span class="starttoner"><span class="tone-boble">C</span><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["C4", "G4"], this)'><strong>Kvarten (felles)</strong><span class="starttoner"><span class="tone-boble">C</span><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["C5"], this)'><strong>Kvinten</strong><span class="starttoner"><span class="tone-boble">C</span></span></button>
+<button onclick='playNotes(["C5"], this)'><strong>Kvinten (felles)</strong><span class="starttoner"><span class="tone-boble">C</span></span></button>
+<button onclick='playNotes(["Bb3", "Db4", "F4"], this)'><strong>Kyss av eld</strong><span class="starttoner"><span class="tone-boble">Bb</span><span class="tone-boble">Db</span><span class="tone-boble">F</span></span></button>
 <h2 id="L">L</h2>
-<button onclick='playNotes(["Bb4", "D5"], this)'><strong>Litjvisa mi</strong></button>
+<button onclick='playNotes(["Bb4", "D5"], this)'><strong>Litjvisa mi</strong><span class="starttoner"><span class="tone-boble">Bb</span><span class="tone-boble">D</span></span></button>
 <h2 id="M">M</h2>
-<button onclick='playNotes(["B3", "E4"], this)'><strong>Mannen og kråka</strong></button>
-<button onclick='playNotes(["E3", "B3", "E4", "E5"], this)'><strong>Masurka (Jentelokken)</strong></button>
-<button onclick='playNotes(["G4"], this)'><strong>Metsämiehen Juomalaulu</strong></button>
-<button onclick='playNotes(["G4"], this)'><strong>Metsämiehen Juomalaulu (felles)</strong></button>
-<button onclick='playNotes(["F4", "A4", "C5"], this)'><strong>Mitt hjerte er ditt</strong></button>
+<button onclick='playNotes(["B3", "E4"], this)'><strong>Mannen og kråka</strong><span class="starttoner"><span class="tone-boble">B</span><span class="tone-boble">E</span></span></button>
+<button onclick='playNotes(["E3", "B3", "E4", "E5"], this)'><strong>Masurka (Jentelokken)</strong><span class="starttoner"><span class="tone-boble">E</span><span class="tone-boble">B</span></span></button>
+<button onclick='playNotes(["G4"], this)'><strong>Metsämiehen Juomalaulu</strong><span class="starttoner"><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["G4"], this)'><strong>Metsämiehen Juomalaulu (felles)</strong><span class="starttoner"><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["F4", "A4", "C5"], this)'><strong>Mitt hjerte er ditt</strong><span class="starttoner"><span class="tone-boble">F</span><span class="tone-boble">A</span><span class="tone-boble">C</span></span></button>
 <h2 id="N">N</h2>
-<button onclick='playNotes(["Bb3", "F4", "Bb4", "D5"], this)'><strong>Norge, mitt Norge</strong></button>
-<button onclick='playNotes(["D4", "G4"], this)'><strong>Nu klinger</strong></button>
-<button onclick='playNotes(["D4", "G4"], this)'><strong>Nu klinger (felles)</strong></button>
+<button onclick='playNotes(["Bb3", "F4", "Bb4", "D5"], this)'><strong>Norge, mitt Norge</strong><span class="starttoner"><span class="tone-boble">Bb</span><span class="tone-boble">F</span><span class="tone-boble">D</span></span></button>
+<button onclick='playNotes(["D4", "G4"], this)'><strong>Nu klinger</strong><span class="starttoner"><span class="tone-boble">D</span><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["D4", "G4"], this)'><strong>Nu klinger (felles)</strong><span class="starttoner"><span class="tone-boble">D</span><span class="tone-boble">G</span></span></button>
 <h2 id="O">O</h2>
-<button onclick='playNotes(["C4"], this)'><strong>Oppkomst og nedkomst</strong></button>
-<button onclick='playNotes(["C4"], this)'><strong>Oppkomst og nedkomst (felles)</strong></button>
+<button onclick='playNotes(["C4"], this)'><strong>Oppkomst og nedkomst</strong><span class="starttoner"><span class="tone-boble">C</span></span></button>
+<button onclick='playNotes(["C4"], this)'><strong>Oppkomst og nedkomst (felles)</strong><span class="starttoner"><span class="tone-boble">C</span></span></button>
 <h2 id="P">P</h2>
-<button onclick='playNotes(["B3", "E4", "G4", "B4"], this)'><strong>Pols fra Dunderlandsdalen</strong></button>
+<button onclick='playNotes(["B3", "E4", "G4", "B4"], this)'><strong>Pols fra Dunderlandsdalen</strong><span class="starttoner"><span class="tone-boble">B</span><span class="tone-boble">E</span><span class="tone-boble">G</span></span></button>
 <h2 id="R">R</h2>
-<button onclick='playNotes(["B3", "E4", "B4"], this)'><strong>Roland og Magnuskongen</strong></button>
-<button onclick='playNotes(["Eb3", "Db4", "Gb4"], this)'><strong>Ronja Rövardotter</strong></button>
+<button onclick='playNotes(["B3", "E4", "B4"], this)'><strong>Roland og Magnuskongen</strong><span class="starttoner"><span class="tone-boble">B</span><span class="tone-boble">E</span></span></button>
+<button onclick='playNotes(["Eb3", "Db4", "Gb4"], this)'><strong>Ronja Rövardotter</strong><span class="starttoner"><span class="tone-boble">Eb</span><span class="tone-boble">Db</span><span class="tone-boble">Gb</span></span></button>
 <h2 id="S">S</h2>
-<button onclick='playNotes(["D4", "D4", "G4", "G4", "D4"], this)'><strong>Safari (fanfare)</strong></button>
-<button onclick='playNotes(["G4"], this)'><strong>Sangerhilsen</strong></button>
-<button onclick='playNotes(["A4", "B4", "Db5"], this)'><strong>Sit on My Face</strong></button>
-<button onclick='playNotes(["B4", "Db5", "Eb5"], this)'><strong>Sit on My Face (felles)</strong></button>
-<button onclick='playNotes(["F3", "C4", "F4", "A4"], this)'><strong>Sjungom</strong></button>
-<button onclick='playNotes(["G3", "D4", "G4", "B4"], this)'><strong>Sjungom (felles)</strong></button>
-<button onclick='playNotes(["C3", "E4", "G4", "C5"], this)'><strong>Slutkör</strong></button>
-<button onclick='playNotes(["C3", "E4", "G4", "C5"], this)'><strong>Slutkör (felles)</strong></button>
-<button onclick='playNotes(["B4"], this)'><strong>So ro godt barn</strong></button>
-<button onclick='playNotes(["Gb4"], this)'><strong>Sommarpsalm</strong></button>
-<button onclick='playNotes(["G4"], this)'><strong>Spillopper og flisespikkeri</strong></button>
-<button onclick='playNotes(["Bb4", "G4"], this)'><strong>Syngedame</strong></button>
+<button onclick='playNotes(["D4", "D4", "G4", "G4", "D4"], this)'><strong>Safari (fanfare)</strong><span class="starttoner"><span class="tone-boble">D</span><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["G4"], this)'><strong>Sangerhilsen</strong><span class="starttoner"><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["A4", "B4", "Db5"], this)'><strong>Sit on My Face</strong><span class="starttoner"><span class="tone-boble">A</span><span class="tone-boble">B</span><span class="tone-boble">Db</span></span></button>
+<button onclick='playNotes(["B4", "Db5", "Eb5"], this)'><strong>Sit on My Face (felles)</strong><span class="starttoner"><span class="tone-boble">B</span><span class="tone-boble">Db</span><span class="tone-boble">Eb</span></span></button>
+<button onclick='playNotes(["F3", "C4", "F4", "A4"], this)'><strong>Sjungom</strong><span class="starttoner"><span class="tone-boble">F</span><span class="tone-boble">C</span><span class="tone-boble">A</span></span></button>
+<button onclick='playNotes(["G3", "D4", "G4", "B4"], this)'><strong>Sjungom (felles)</strong><span class="starttoner"><span class="tone-boble">G</span><span class="tone-boble">D</span><span class="tone-boble">B</span></span></button>
+<button onclick='playNotes(["C3", "E4", "G4", "C5"], this)'><strong>Slutkör</strong><span class="starttoner"><span class="tone-boble">C</span><span class="tone-boble">E</span><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["C3", "E4", "G4", "C5"], this)'><strong>Slutkör (felles)</strong><span class="starttoner"><span class="tone-boble">C</span><span class="tone-boble">E</span><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["B4"], this)'><strong>So ro godt barn</strong><span class="starttoner"><span class="tone-boble">B</span></span></button>
+<button onclick='playNotes(["Gb4"], this)'><strong>Sommarpsalm</strong><span class="starttoner"><span class="tone-boble">Gb</span></span></button>
+<button onclick='playNotes(["G4"], this)'><strong>Spillopper og flisespikkeri</strong><span class="starttoner"><span class="tone-boble">G</span></span></button>
+<button onclick='playNotes(["Bb4", "G4"], this)'><strong>Syngedame</strong><span class="starttoner"><span class="tone-boble">Bb</span><span class="tone-boble">G</span></span></button>
 <h2 id="T">T</h2>
-<button onclick='playNotes(["B4"], this)'><strong>Tersen</strong></button>
-<button onclick='playNotes(["Db5"], this)'><strong>Tersen (felles)</strong></button>
-<button onclick='playNotes(["Gb4"], this)'><strong>Till Österland</strong></button>
-<button onclick='playNotes(["Gb4"], this)'><strong>Till Österland (felles)</strong></button>
-<button onclick='playNotes(["G3", "D4"], this)'><strong>Trolldans</strong></button>
+<button onclick='playNotes(["B4"], this)'><strong>Tersen</strong><span class="starttoner"><span class="tone-boble">B</span></span></button>
+<button onclick='playNotes(["Db5"], this)'><strong>Tersen (felles)</strong><span class="starttoner"><span class="tone-boble">Db</span></span></button>
+<button onclick='playNotes(["Gb4"], this)'><strong>Till Österland</strong><span class="starttoner"><span class="tone-boble">Gb</span></span></button>
+<button onclick='playNotes(["Gb4"], this)'><strong>Till Österland (felles)</strong><span class="starttoner"><span class="tone-boble">Gb</span></span></button>
+<button onclick='playNotes(["G3", "D4"], this)'><strong>Trolldans</strong><span class="starttoner"><span class="tone-boble">G</span><span class="tone-boble">D</span></span></button>
 <h2 id="U">U</h2>
-<button onclick='playNotes(["B4", "Db5", "D5"], this)'><strong>Ubi caritas</strong></button>
+<button onclick='playNotes(["B4", "Db5", "D5"], this)'><strong>Ubi caritas</strong><span class="starttoner"><span class="tone-boble">B</span><span class="tone-boble">Db</span><span class="tone-boble">D</span></span></button>
 <h2 id="V">V</h2>
-<button onclick='playNotes(["G3", "D4", "G4", "B4"], this)'><strong>Vackra kvarten</strong></button>
-<button onclick='playNotes(["A3", "E4", "A4", "Db5"], this)'><strong>Vackra kvarten (felles)</strong></button>
-<button onclick='playNotes(["D4"], this)'><strong>Vals</strong></button>
-<button onclick='playNotes(["E4"], this)'><strong>Vals (felles)</strong></button>
-<button onclick='playNotes(["D4", "Gb4", "D5"], this)'><strong>Ved Rondane</strong></button>
+<button onclick='playNotes(["G3", "D4", "G4", "B4"], this)'><strong>Vackra kvarten</strong><span class="starttoner"><span class="tone-boble">G</span><span class="tone-boble">D</span><span class="tone-boble">B</span></span></button>
+<button onclick='playNotes(["A3", "E4", "A4", "Db5"], this)'><strong>Vackra kvarten (felles)</strong><span class="starttoner"><span class="tone-boble">A</span><span class="tone-boble">E</span><span class="tone-boble">Db</span></span></button>
+<button onclick='playNotes(["D4"], this)'><strong>Vals</strong><span class="starttoner"><span class="tone-boble">D</span></span></button>
+<button onclick='playNotes(["E4"], this)'><strong>Vals (felles)</strong><span class="starttoner"><span class="tone-boble">E</span></span></button>
+<button onclick='playNotes(["D4", "Gb4", "D5"], this)'><strong>Ved Rondane</strong><span class="starttoner"><span class="tone-boble">D</span><span class="tone-boble">Gb</span></span></button>
 
   <footer style="margin-top: 3em; text-align: left; font-size: 0.9em; color: #202938;">
     <p>Laget med kjærlighet til TKS av Andreas Belboe, fordi det synges for lite!</p>
